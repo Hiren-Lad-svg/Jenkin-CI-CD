@@ -29,6 +29,7 @@ jobs:
   build:
     name: Build and Deploy
     runs-on: ubuntu-latest
+    environment: Test  # target environment name 
     steps:
     - uses: actions/checkout@v2
     
