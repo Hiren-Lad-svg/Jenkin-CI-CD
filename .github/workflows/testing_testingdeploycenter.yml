@@ -11,6 +11,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: windows-latest
+     
+    environment: 'Testing'
 
     steps:
     - uses: actions/checkout@master
