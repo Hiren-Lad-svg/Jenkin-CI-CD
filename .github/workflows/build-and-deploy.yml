@@ -24,7 +24,7 @@ env:
   AZURE_WEBAPP_NAME: aspnet-core-sample-deploy  # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: './published'      # set this to the path to your web app project, defaults to the repository root
   NETCORE_VERSION: '3.1.101'                    # set this to the .NET Core version to use
-  
+    environment: Test
 jobs:
   build:
     name: Build and Deploy
@@ -49,7 +49,7 @@ jobs:
 
     - name: Publish app for deploy
       run: dotnet publish --configuration Release --no-build --output ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-      environment: Test
+     
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v1
       with:
