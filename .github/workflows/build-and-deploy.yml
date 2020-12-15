@@ -24,13 +24,12 @@ env:
   AZURE_WEBAPP_NAME: aspnet-core-sample-deploy  # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: './published'      # set this to the path to your web app project, defaults to the repository root
   NETCORE_VERSION: '3.1.101'                    # set this to the .NET Core version to use
-
+  environment: Test
 jobs:
   build:
     name: Build and Deploy
     runs-on: ubuntu-latest
-    environment:
-           Name: Test  
+    
     steps:
     - uses: actions/checkout@v2
     
