@@ -21,7 +21,7 @@ on:
       - '**/*.gitattributes'
 
 #environment:
-      name : Test
+      name : " Test "
       tags: web
 env:
   AZURE_WEBAPP_NAME: aspnet-core-sample-deploy  # set this to your application's name
