@@ -23,6 +23,7 @@ variables:
 
 #environmentname:
       environmentname : " Test "
+      tag: web
       
 env:
   AZURE_WEBAPP_NAME: aspnet-core-sample-deploy  # set this to your application's name
